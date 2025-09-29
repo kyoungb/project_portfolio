@@ -1,0 +1,85 @@
+---
+title: "Measuring the Mental Cost of Social Media" 
+author: "Katie Youngberg" 
+date: "2025-09-29"
+format:
+    html:
+        code-fold: true
+        toc: true
+---
+
+# Measuring the Mental Cost of Social Media
+
+## Introduction
+
+Teenagers’ mental health is a growing public health concern. In this tutorial, I will show you how to compare **levels of social media use** with **self-reported mental well-being** from the latest CDC Youth Risk Behavior Surveillance System (YRBSS).\
+
+I will demonstrate how simple survey data analysis can reveal correlations between screen use and anxiety.\
+Disclaimer: This project will show correlation, **not causation**.
+
+## Data & Methods
+
+### Data Import 
+
+-   Source: CDC YRBSS (most recent release; SAS format converted to CSV).\
+-   Variables of interest:
+    -   `Social Media Use` (hours per day)\
+    -   `Current Mental Health` (anxiety/well-being rating)
+
+### Steps
+
+1.  **Load and clean data**
+
+    ``` python
+    import pandas as pd
+
+    # read SAS file
+    df = pd.read_sas("2023XXH-Formats-Program.sas")
+
+    # save to CSV
+    df.to_csv("2023XXH-Formats-Program.csv", index=False)
+    df(head)
+    ```
+
+2.  **Categorize social media use**
+
+    -   Low (0–2 hrs/day)\
+    -   Medium (3–5 hrs/day)\
+    -   High (6+ hrs/day)\
+
+3.  **Compute average anxiety score** by group.\
+
+4.  **Summarize findings** with a Markdown table and a bar chart.
+
+## Results
+
+### Average Anxiety Scores by Social Media Use
+
+| Social Media Use | Avg. Anxiety Score |
+|:-----------------|-------------------:|
+| Low (0–2h)       |               2.75 |
+| Medium (3–5h)    |               3.23 |
+| High (6h+)       |               4.02 |
+
+### Visualization
+
+![Bar chart of anxiety scores by social media use](chart.png "Comparison of teen anxiety by social media use")
+
+## Discussion
+
+-   **Pattern observed (demo data):** Higher reported anxiety is associated with heavier social media use.\
+-   **Strengths:** Large, nationally representative dataset (when using actual YRBSS).\
+-   **Limitations:**
+    -   Correlation ≠ causation.\
+    -   Self-reported data may introduce bias.\
+    -   Potential confounders (family, academics, socioeconomic status) not modeled here.
+
+## Call to Action
+
+-   **For peers:** Apply these steps to other **health-related datasets** and share reproducible analyses on GitHub Pages.\
+-   **Practical skill:** Data wrangling + Markdown summaries make public health data **accessible** and **persuasive**.
+
+## References & Links
+
+-   CDC YRBSS: [Survey homepage](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm)\
+-   NIH Research Summary: [Social media use linked to brain changes in teens](https://www.nih.gov/news-events/nih-research-matters/social-media-use-linked-brain-changes-teens)

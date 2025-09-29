@@ -42,6 +42,11 @@ See how I gather data from different sources and prepare it for analysis.
 See how I tackle a data science project beginning to end.
 :::
 
+::: {.g-col-6}
+### [Blog Post](projects/blogpost.qmd)
+See how I upload data from different file types to create meaningful visual results.
+:::
+
 :::
 
 ---

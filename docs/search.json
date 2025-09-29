@@ -32,7 +32,7 @@
     "href": "projects/index.html",
     "title": "Projects Overview",
     "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.\n\n\n\n(blogpost.qmd) Description: A tutorial for uploading and refining data.",
     "crumbs": [
       "Projects Overview"
     ]
@@ -42,7 +42,7 @@
     "href": "projects/index.html#all-projects",
     "title": "Projects Overview",
     "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.\n\n\n\n(blogpost.qmd) Description: A tutorial for uploading and refining data.",
     "crumbs": [
       "Projects Overview"
     ]
@@ -118,5 +118,54 @@
     "crumbs": [
       "Final Project"
     ]
+  },
+  {
+    "objectID": "projects/blogpost.html",
+    "href": "projects/blogpost.html",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "Teenagers’ mental health is a growing public health concern. In this tutorial, I will show you how to compare levels of social media use with self-reported mental well-being from the latest CDC Youth Risk Behavior Surveillance System (YRBSS).\n\nI will demonstrate how simple survey data analysis can reveal correlations between screen use and anxiety.\nDisclaimer: This project will show correlation, not causation.\n\n\n\n\n\n\nSource: CDC YRBSS (most recent release; SAS format converted to CSV).\n\nVariables of interest:\n\nSocial Media Use (hours per day)\n\nCurrent Mental Health (anxiety/well-being rating)\n\n\n\n\n\n\nLoad and clean data\nimport pandas as pd\n\n# read SAS file\ndf = pd.read_sas(\"2023XXH-Formats-Program.sas\")\n\n# save to CSV\ndf.to_csv(\"2023XXH-Formats-Program.csv\", index=False)\ndf(head)\nCategorize social media use\n\nLow (0–2 hrs/day)\n\nMedium (3–5 hrs/day)\n\nHigh (6+ hrs/day)\n\n\nCompute average anxiety score by group.\n\nSummarize findings with a Markdown table and a bar chart.\n\n\n\n\n\n\n\n\n\n\nSocial Media Use\nAvg. Anxiety Score\n\n\n\n\nLow (0–2h)\n2.75\n\n\nMedium (3–5h)\n3.23\n\n\nHigh (6h+)\n4.02\n\n\n\n\n\n\n\n\n\nBar chart of anxiety scores by social media use\n\n\n\n\n\n\n\nPattern observed (demo data): Higher reported anxiety is associated with heavier social media use.\n\nStrengths: Large, nationally representative dataset (when using actual YRBSS).\n\nLimitations:\n\nCorrelation ≠ causation.\n\nSelf-reported data may introduce bias.\n\nPotential confounders (family, academics, socioeconomic status) not modeled here.\n\n\n\n\n\n\nFor peers: Apply these steps to other health-related datasets and share reproducible analyses on GitHub Pages.\n\nPractical skill: Data wrangling + Markdown summaries make public health data accessible and persuasive.\n\n\n\n\n\nCDC YRBSS: Survey homepage\n\nNIH Research Summary: Social media use linked to brain changes in teens"
+  },
+  {
+    "objectID": "projects/blogpost.html#introduction",
+    "href": "projects/blogpost.html#introduction",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "Teenagers’ mental health is a growing public health concern. In this tutorial, I will show you how to compare levels of social media use with self-reported mental well-being from the latest CDC Youth Risk Behavior Surveillance System (YRBSS).\n\nI will demonstrate how simple survey data analysis can reveal correlations between screen use and anxiety.\nDisclaimer: This project will show correlation, not causation."
+  },
+  {
+    "objectID": "projects/blogpost.html#data-methods",
+    "href": "projects/blogpost.html#data-methods",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "Source: CDC YRBSS (most recent release; SAS format converted to CSV).\n\nVariables of interest:\n\nSocial Media Use (hours per day)\n\nCurrent Mental Health (anxiety/well-being rating)\n\n\n\n\n\n\nLoad and clean data\nimport pandas as pd\n\n# read SAS file\ndf = pd.read_sas(\"2023XXH-Formats-Program.sas\")\n\n# save to CSV\ndf.to_csv(\"2023XXH-Formats-Program.csv\", index=False)\ndf(head)\nCategorize social media use\n\nLow (0–2 hrs/day)\n\nMedium (3–5 hrs/day)\n\nHigh (6+ hrs/day)\n\n\nCompute average anxiety score by group.\n\nSummarize findings with a Markdown table and a bar chart."
+  },
+  {
+    "objectID": "projects/blogpost.html#results",
+    "href": "projects/blogpost.html#results",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "Social Media Use\nAvg. Anxiety Score\n\n\n\n\nLow (0–2h)\n2.75\n\n\nMedium (3–5h)\n3.23\n\n\nHigh (6h+)\n4.02\n\n\n\n\n\n\n\n\n\nBar chart of anxiety scores by social media use"
+  },
+  {
+    "objectID": "projects/blogpost.html#discussion",
+    "href": "projects/blogpost.html#discussion",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "Pattern observed (demo data): Higher reported anxiety is associated with heavier social media use.\n\nStrengths: Large, nationally representative dataset (when using actual YRBSS).\n\nLimitations:\n\nCorrelation ≠ causation.\n\nSelf-reported data may introduce bias.\n\nPotential confounders (family, academics, socioeconomic status) not modeled here."
+  },
+  {
+    "objectID": "projects/blogpost.html#call-to-action",
+    "href": "projects/blogpost.html#call-to-action",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "For peers: Apply these steps to other health-related datasets and share reproducible analyses on GitHub Pages.\n\nPractical skill: Data wrangling + Markdown summaries make public health data accessible and persuasive."
+  },
+  {
+    "objectID": "projects/blogpost.html#references-links",
+    "href": "projects/blogpost.html#references-links",
+    "title": "Measuring the Mental Cost of Social Media",
+    "section": "",
+    "text": "CDC YRBSS: Survey homepage\n\nNIH Research Summary: Social media use linked to brain changes in teens"
   }
 ]
