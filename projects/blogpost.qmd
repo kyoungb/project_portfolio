@@ -107,7 +107,36 @@ print(avg_scores)
 
 ### Visualization
 
-![Bar chart of anxiety scores by social media use](chart.png "Comparison of teen anxiety by social media use")
+```python 
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Data (from previous calculation)
+averages = {
+    "Less than an Hour": 1.74,
+    "Between 1 and 2 hours": 2.54,
+    "Between 2 and 3 hours": 3.02,
+    "Between 3 and 4 hours": 3.23,
+    "Between 4 and 5 hours": 3.42,
+    "More than 5 hours": 4.02
+}
+
+# Convert to DataFrame
+avg_scores = pd.DataFrame.from_dict(averages, orient="index", columns=["Average Depression Score"])
+
+# Plot as bar chart
+ax = avg_scores.plot(kind="bar", legend=False, figsize=(8,5), color="skyblue")
+
+# Titles and labels
+plt.title("Average Depression Score by Time Spent", fontsize=14)
+plt.xlabel("Average Time Category")
+plt.ylabel("Average Depression Score")
+plt.xticks(rotation=45, ha="right")  # tilt labels for readability
+plt.ylim(0,5)  # since scores are on a 1–5 scale
+
+# Show chart
+plt.show()
+```
 
 ## Discussion
 
