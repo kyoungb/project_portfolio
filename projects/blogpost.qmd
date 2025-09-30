@@ -31,14 +31,12 @@ Disclaimer: This project will show correlation, **not causation**.
 1.  **Load and clean data**
 
     ``` python
-    import pandas as pd
+   import pandas as pd
 
-    # read SAS file
-    df = pd.read_sas("2023XXH-Formats-Program.sas")
+    df = pd.read_csv('smmh.csv')
 
-    # save to CSV
-    df.to_csv("2023XXH-Formats-Program.csv", index=False)
-    df(head)
+    df.head()
+
     ```
 
 2.  **Categorize social media use**
