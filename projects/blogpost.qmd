@@ -10,16 +10,16 @@ format:
 
 ## Introduction
 
-Mental health has become one of the most pressing public health challenges of our time. In this tutorial, we will walk through a simple data analysis project that explores the relationship between **social media use** and **self-reported mental well-being**.\
+Mental health has become one of the most pressing public health challenges of our time. In this brief data and coding tutorial, we will walk through a simple data analysis project that explores the relationship between **social media use** and **self-reported mental well-being**.\
 
-Using data, we will demonstrate how to clean, categorize, and visualize survey responses to see potential correlations between screen time and depression.\
+Using data and Pandas functions found in Python packages, we will demonstrate how to clean, categorize, and visualize survey responses to see potential correlations between screen time and depression.\
 Disclaimer: This analysis will  only show correlation, **not causation**.
 
 ## Data & Methods
 
 ### Data Import 
 
-For this project, we will use a publicly available dataset from Kaggle's Public Health domain. The two key variables we'll focus on are:
+For this project, we will use a publicly available dataset from Kaggle's Public Health domain. The two key variables we'll focus on within our dataset are:
     - `Social Media Use` (hours per day)\
     - `Depression` (self-reported increase in depressive feelings)
 
@@ -34,7 +34,7 @@ We'll start by importing the dataset into a Pandas DataFrame so we can begin cle
 
 ### Step 1: Categorize Social Media Use
 
-To make comparisons clearer, we’ll bucket respondents into time-use categories based on their daily social media usage.
+To make comparisons clearer, we’ll categorize respondents into time-use categories based on their daily social media usage.
 
     -   0 -> Less than an hour\
     -   1 -> 1-2 hrs/day\
@@ -67,7 +67,7 @@ plt.show()
 
 ## Results
 
-Looking at the heatmap, you may notice a trend: the groups reporting the most daily social media use also tend to show higher depression scores. To better quantify this relationship, let’s calculate the **average depression score** for each category. 
+Looking at the heatmap, you may notice a trend: the groups reporting the most daily social media use also tend to show higher depression scores. To better quantify this relationship, let’s calculate the **average depression score** for each category using python's averages functions. 
 
 
 ```python
@@ -108,7 +108,7 @@ Here’s a summary table of the results:
 
 ### Visualization
 
-To make trend easy to see, let's plot these averages as a bar chart with matplotlib.pyplot and pandas packages!
+To make this trend easy to see, let's plot these averages as a bar chart with matplotlib.pyplot and pandas packages!
 
 ```python 
 import pandas as pd
