@@ -8,8 +8,6 @@ format:
         toc: true
 ---
 
-# Measuring the Mental Cost of Social Media
-
 ## Introduction
 
 Mental health is a growing public health concern. In this tutorial, I will show you how to compare **levels of social media use** with **self-reported mental well-being**.\
