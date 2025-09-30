@@ -1,5 +1,6 @@
 ---
 title: "Measuring the Mental Cost of Social Media" 
+title-block: true
 author: "Katie Youngberg" 
 date: "2025-09-29"
 format:
@@ -19,7 +20,7 @@ Disclaimer: This analysis will  only show correlation, **not causation**.
 
 ### Data Import 
 
-For this project, we will use a publicly available dataset from Kaggle's Public Health domain. The two key variables we'll focus on within our dataset are:
+For this project, we will use a publicly available dataset from Kaggle's Public Health domain. The two key variables we'll focus on within our dataset are:\
     - `Social Media Use` (hours per day)\
     - `Depression` (self-reported increase in depressive feelings)
 
@@ -43,7 +44,7 @@ To make comparisons clearer, we’ll categorize respondents into time-use catego
     -   4 -> 4-5 hrs/day\
     -   5 -> 5+ hrs/day\
 
-### Step 2: Compute Average Depression by Group.**\
+### Step 2: Compute Average Depression by Group.\
 
 Next, we’ll calculate how depression scores differ across these categories. A heatmap provides a quick way to visualize the relationship between **time spent on social media** and **self-reported depression**.
 
@@ -143,24 +144,24 @@ plt.show()
 ![Bar chart](barchart.png)
 
 ### Discussion
-From this simple analysis, a clear pattern emerges: **higher reported depression is associated with heavier social media use.**/
+From this simple analysis, a clear pattern emerges: **higher reported depression is associated with heavier social media use.**\
 
-- **Strengths:** The dataset is relatively large, making trends easier to detect./
+- **Strengths:** The dataset is relatively large, making trends easier to detect.\
 
-- **Limitations:**/
+- **Limitations:**\
 
-    - Correlation ≠ causation./
+    - Correlation ≠ causation.\
 
-    - Self-reported data introduces bias./
+    - Self-reported data introduces bias.\
 
-    - Important confounders (family, academics, socioeconomic status, etc.) are not included here./ 
+    - Important confounders (family, academics, socioeconomic status, etc.) are not included here.\ 
 
 
 ### Call to Action
 
 This tutorial demonstrates how a few lines of code can uncover meaningful patterns in public health data.
 
-- **For students and peers:** Try applying these steps to other health-related datasets and share your findings.
+- **For students and peers:** Try applying these steps to other health-related datasets and share your findings. You never know what you might discover!
 
 - **Practical takeaway:** Combining Python, Markdown, and visualization tools helps make data analysis **clear, reproducible, and persuasive.**
 
