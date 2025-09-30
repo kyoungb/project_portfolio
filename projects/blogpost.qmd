@@ -30,16 +30,13 @@ Disclaimer: This project will show correlation, **not causation**.
 
 1.  **Upload and format data**
 
-I will use a code block, as seen here, to load and format my data correctly. 
+I will use a code block, as seen here, to load and format my data correctly. If you would like, you can use the function df.head() to properly visualize your data. 
 
-I will then use the function df.head() to visualize the first rows of data. 
 
     ``` python
    import pandas as pd
 
     df = pd.read_csv('smmh.csv')
-
-    df.head()
 
     ```
 
@@ -68,10 +65,13 @@ import matplotlib.pyplot as plt
 crosstabDT = pd.crosstab(index = df.AvgTime , columns = df.Depressed)
 sns.heatmap(crosstabDT, annot = True, fmt='d')
 
-plt.title('Mental hlth lol')
+plt.title('Mental Health and Media Use')
 
 plt.show()
 ```
+
+![Plot](plot.png)
+
 
 ## Results
 
@@ -103,7 +103,7 @@ for col in df.columns:
 
 
 avg_scores = pd.DataFrame.from_dict(averages, orient="index", columns=["Average Depression Score"])
-print(avg_scores)
+
 ```
 
 After finding the results, let's plug them into a table using Markdown table techniques to show the numbers side by side! 
@@ -151,6 +151,7 @@ plt.ylim(0,5)  # since scores are on a 1–5 scale
 # Show chart
 plt.show()
 ```
+![Bar chart](barchart.png)
 
 ## Discussion
 We will now take a look at the patterns and record our observations about the data. 
