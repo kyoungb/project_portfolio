@@ -26,7 +26,7 @@ Disclaimer: This project will show correlation, **not causation**.
 
 ### Steps
 
-1.  **Upload and format data**
+**1.  Upload and format data**
 
 I will use a code block, as seen here, to load and format my data correctly. If you would like, you can use the function df.head() to properly visualize your data. 
 
@@ -38,7 +38,7 @@ I will use a code block, as seen here, to load and format my data correctly. If 
 
     ```
 
-2.  **Categorize social media use**
+**2. Categorize social media use**
 
 I will take responses from "AvgTime" (average time spent on social media daily) to organize my survey response data. 
 
@@ -49,7 +49,7 @@ I will take responses from "AvgTime" (average time spent on social media daily) 
     -   4 (4-5 hrs/day)\
     -   5 (5+ hrs/day)\
 
-3.  **Compute average depression score** by group.\
+**3. Compute average depression score by group.**\
 
 I will then utilize a heat density plot to display the number of respondents in each category, showing the average time spent on social media cross-tabulated with the self-reported levels of depression. 
 
