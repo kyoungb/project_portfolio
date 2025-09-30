@@ -37,12 +37,12 @@ We'll start by importing the dataset into a Pandas DataFrame so we can begin cle
 
 To make comparisons clearer, we’ll categorize respondents into time-use categories based on their daily social media usage.
 
-    -   0 -> Less than an hour\
-    -   1 -> 1-2 hrs/day\
-    -   2 -> 2-3 hrs/day\
-    -   3 -> 3-4 hrs/day\
-    -   4 -> 4-5 hrs/day\
-    -   5 -> 5+ hrs/day\
+    -   0 -> Less than an hour
+    -   1 -> 1-2 hrs/day
+    -   2 -> 2-3 hrs/day
+    -   3 -> 3-4 hrs/day
+    -   4 -> 4-5 hrs/day
+    -   5 -> 5+ hrs/day
 
 ### Step 2: Compute Average Depression by Group.\
 
