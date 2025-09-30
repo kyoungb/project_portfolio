@@ -21,14 +21,18 @@ Disclaimer: This project will show correlation, **not causation**.
 
 ### Data Import 
 
--   Source: CDC YRBSS (most recent release; SAS format converted to CSV).\
+-   Source: Kaggle Public Health Domain Dataset.\
 -   Variables of interest:
     -   `Social Media Use` (hours per day)\
     -   `Depression` (increased feelings of depression)
 
 ### Steps
 
-1.  **Load and clean data**
+1.  **Upload and format data**
+
+I will use a code block, as seen here, to load and format my data correctly. 
+
+I will then use the function df.head() to visualize the first rows of data. 
 
     ``` python
    import pandas as pd
@@ -41,6 +45,8 @@ Disclaimer: This project will show correlation, **not causation**.
 
 2.  **Categorize social media use**
 
+I will take responses from "AvgTime" (average time spent on social media daily) to organize my survey response data. 
+
     -   0 (Less than an hour)\
     -   1 (1-2 hrs/day)\
     -   2 (2-3 hrs/day)\
@@ -49,6 +55,8 @@ Disclaimer: This project will show correlation, **not causation**.
     -   5 (5+ hrs/day)\
 
 3.  **Compute average depression score** by group.\
+
+I will then utilize a heat density plot to display the number of respondents in each category, showing the average time spent on social media cross-tabulated with the self-reported levels of depression. 
 
 ```python
 import numpy as np
@@ -66,6 +74,8 @@ plt.show()
 ```
 
 ## Results
+
+Notice how the highest rates of depression were also reported by the group that spent the most time on social media daily? Let's take a look at average depression scores by using python to do some math. 
 
 ### Average Depression Scores by Social Media Use
 
@@ -96,6 +106,8 @@ avg_scores = pd.DataFrame.from_dict(averages, orient="index", columns=["Average 
 print(avg_scores)
 ```
 
+After finding the results, let's plug them into a table using Markdown table techniques to show the numbers side by side! 
+
 | Social Media Use | Avg. Depression Score |
 |:-----------------|-------------------:|
 | 0 (<1 hr/day)        |               2.00 |
@@ -107,18 +119,20 @@ print(avg_scores)
 
 ### Visualization
 
+Now, we will take the numbers found in our table and plug them in to a bar chart created with matplotlib.pyplot and pandas packages!
+
 ```python 
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Data (from previous calculation)
 averages = {
-    "Less than an Hour": 1.74,
-    "Between 1 and 2 hours": 2.54,
-    "Between 2 and 3 hours": 3.02,
-    "Between 3 and 4 hours": 3.23,
-    "Between 4 and 5 hours": 3.42,
-    "More than 5 hours": 4.02
+    "Less than an Hour": 2,
+    "Between 1 and 2 hours": 2.8,
+    "Between 2 and 3 hours": 3.18,
+    "Between 3 and 4 hours": 3.37,
+    "Between 4 and 5 hours": 3.45,
+    "More than 5 hours": 3.77
 }
 
 # Convert to DataFrame
@@ -139,9 +153,10 @@ plt.show()
 ```
 
 ## Discussion
+We will now take a look at the patterns and record our observations about the data. 
 
--   **Pattern observed (demo data):** Higher reported anxiety is associated with heavier social media use.\
--   **Strengths:** Large, nationally representative dataset (when using actual YRBSS).\
+-   **Pattern observed:** Higher reported depression is associated with heavier social media use.\
+-   **Strengths:** Large dataset.\
 -   **Limitations:**
     -   Correlation ≠ causation.\
     -   Self-reported data may introduce bias.\
@@ -154,5 +169,5 @@ plt.show()
 
 ## References & Links
 
--   CDC YRBSS: [Survey homepage](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm)\
+-   Kaggle: [Dataset reference](https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health/data)\
 -   NIH Research Summary: [Social media use linked to brain changes in teens](https://www.nih.gov/news-events/nih-research-matters/social-media-use-linked-brain-changes-teens)
