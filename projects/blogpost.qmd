@@ -10,26 +10,20 @@ format:
 
 ## Introduction
 
-Mental health is a growing public health concern. In this tutorial, I will show you how to compare **levels of social media use** with **self-reported mental well-being**.\
+Mental health has become one of the most pressing public health challenges of our time. In this tutorial, we will walk through a simple data analysis project that explores the relationship between **social media use** and **self-reported mental well-being**.\
 
-I will demonstrate how simple survey data analysis can reveal correlations between screen use and depression.\
-Disclaimer: This project will show correlation, **not causation**.
+Using data, we will demonstrate how to clean, categorize, and visualize survey responses to see potential correlations between screen time and depression.\
+Disclaimer: This analysis will  only show correlation, **not causation**.
 
 ## Data & Methods
 
 ### Data Import 
 
--   Source: Kaggle Public Health Domain Dataset.\
--   Variables of interest:
-    -   `Social Media Use` (hours per day)\
-    -   `Depression` (increased feelings of depression)
+For this project, we will use a publicly available dataset from Kaggle's Public Health domain. The two key variables we'll focus on are:
+    - `Social Media Use` (hours per day)\
+    - `Depression` (self-reported increase in depressive feelings)
 
-### Steps
-
-**1.  Upload and format data**
-
-I will use a code block, as seen here, to load and format my data correctly. If you would like, you can use the function df.head() to properly visualize your data. 
-
+We'll start by importing the dataset into a Pandas DataFrame so we can begin cleaning and analyzing it. 
 
     ``` python
    import pandas as pd
@@ -38,20 +32,20 @@ I will use a code block, as seen here, to load and format my data correctly. If 
 
     ```
 
-**2. Categorize social media use**
+### Step 1: Categorize Social Media Use
 
-I will take responses from "AvgTime" (average time spent on social media daily) to organize my survey response data. 
+To make comparisons clearer, we’ll bucket respondents into time-use categories based on their daily social media usage.
 
-    -   0 (Less than an hour)\
-    -   1 (1-2 hrs/day)\
-    -   2 (2-3 hrs/day)\
-    -   3 (3-4 hrs/day)\
-    -   4 (4-5 hrs/day)\
-    -   5 (5+ hrs/day)\
+    -   0 -> Less than an hour\
+    -   1 -> 1-2 hrs/day\
+    -   2 -> 2-3 hrs/day\
+    -   3 -> 3-4 hrs/day\
+    -   4 -> 4-5 hrs/day\
+    -   5 -> 5+ hrs/day\
 
-**3. Compute average depression score by group.**\
+### Step 2: Compute Average Depression by Group.**\
 
-I will then utilize a heat density plot to display the number of respondents in each category, showing the average time spent on social media cross-tabulated with the self-reported levels of depression. 
+Next, we’ll calculate how depression scores differ across these categories. A heatmap provides a quick way to visualize the relationship between **time spent on social media** and **self-reported depression**.
 
 ```python
 import numpy as np
@@ -73,10 +67,7 @@ plt.show()
 
 ## Results
 
-Notice how the highest rates of depression were also reported by the group that spent the most time on social media daily? Let's take a look at average depression scores by using python to do some math. 
-
-### Average Depression Scores by Social Media Use
-
+Looking at the heatmap, you may notice a trend: the groups reporting the most daily social media use also tend to show higher depression scores. To better quantify this relationship, let’s calculate the **average depression score** for each category. 
 
 
 ```python
@@ -104,7 +95,7 @@ avg_scores = pd.DataFrame.from_dict(averages, orient="index", columns=["Average 
 
 ```
 
-After finding the results, let's plug them into a table using Markdown table techniques to show the numbers side by side! 
+Here’s a summary table of the results:
 
 | Social Media Use | Avg. Depression Score |
 |:-----------------|-------------------:|
@@ -117,7 +108,7 @@ After finding the results, let's plug them into a table using Markdown table tec
 
 ### Visualization
 
-Now, we will take the numbers found in our table and plug them in to a bar chart created with matplotlib.pyplot and pandas packages!
+To make trend easy to see, let's plot these averages as a bar chart with matplotlib.pyplot and pandas packages!
 
 ```python 
 import pandas as pd
@@ -151,22 +142,30 @@ plt.show()
 ```
 ![Bar chart](barchart.png)
 
-## Discussion
-We will now take a look at the patterns and record our observations about the data. 
+### Discussion
+From this simple analysis, a clear pattern emerges: **higher reported depression is associated with heavier social media use.**/
 
--   **Pattern observed:** Higher reported depression is associated with heavier social media use.\
--   **Strengths:** Large dataset.\
--   **Limitations:**
-    -   Correlation ≠ causation.\
-    -   Self-reported data may introduce bias.\
-    -   Potential confounders (family, academics, socioeconomic status) not modeled here.
+- **Strengths:** The dataset is relatively large, making trends easier to detect./
 
-## Call to Action
+- **Limitations:**/
 
--   **For peers:** Apply these steps to other **health-related datasets** and share reproducible analyses on GitHub Pages.\
--   **Practical skill:** Data wrangling + Markdown summaries make public health data **accessible** and **persuasive**.
+    - Correlation ≠ causation./
 
-## References & Links
+    - Self-reported data introduces bias./
+
+    - Important confounders (family, academics, socioeconomic status, etc.) are not included here./ 
+
+
+### Call to Action
+
+This tutorial demonstrates how a few lines of code can uncover meaningful patterns in public health data.
+
+- **For students and peers:** Try applying these steps to other health-related datasets and share your findings.
+
+- **Practical takeaway:** Combining Python, Markdown, and visualization tools helps make data analysis **clear, reproducible, and persuasive.**
+
+
+### References & Links
 
 -   Kaggle: [Dataset reference](https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health/data)\
 -   NIH Research Summary: [Social media use linked to brain changes in teens](https://www.nih.gov/news-events/nih-research-matters/social-media-use-linked-brain-changes-teens)
