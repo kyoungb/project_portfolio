@@ -143,7 +143,7 @@ plt.show()
 ```
 ![Bar chart](barchart.png)
 
-### Discussion
+### Conclusion
 From this simple analysis, a clear pattern emerges: **higher reported depression is associated with heavier social media use.**\
 
 - **Strengths:** The dataset is relatively large, making trends easier to detect.\
