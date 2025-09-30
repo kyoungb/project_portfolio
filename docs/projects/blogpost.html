@@ -189,20 +189,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#measuring-the-mental-cost-of-social-media" id="toc-measuring-the-mental-cost-of-social-media" class="nav-link active" data-scroll-target="#measuring-the-mental-cost-of-social-media">Measuring the Mental Cost of Social Media</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#data-methods" id="toc-data-methods" class="nav-link" data-scroll-target="#data-methods">Data &amp; Methods</a>
   <ul class="collapse">
   <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import">Data Import</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
+  <li><a href="#step-1-categorize-social-media-use" id="toc-step-1-categorize-social-media-use" class="nav-link" data-scroll-target="#step-1-categorize-social-media-use">Step 1: Categorize Social Media Use</a></li>
+  <li><a href="#step-2-compute-average-depression-by-group." id="toc-step-2-compute-average-depression-by-group." class="nav-link" data-scroll-target="#step-2-compute-average-depression-by-group.">Step 2: Compute Average Depression by Group.<br>
+  </a></li>
   </ul></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
-  <li><a href="#average-depression-scores-by-social-media-use" id="toc-average-depression-scores-by-social-media-use" class="nav-link" data-scroll-target="#average-depression-scores-by-social-media-use">Average Depression Scores by Social Media Use</a></li>
   <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
-  </ul></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#call-to-action" id="toc-call-to-action" class="nav-link" data-scroll-target="#call-to-action">Call to Action</a></li>
   <li><a href="#references-links" id="toc-references-links" class="nav-link" data-scroll-target="#references-links">References &amp; Links</a></li>
   </ul></li>
@@ -243,59 +241,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="measuring-the-mental-cost-of-social-media" class="level1">
-<h1>Measuring the Mental Cost of Social Media</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Mental health is a growing public health concern. In this tutorial, I will show you how to compare <strong>levels of social media use</strong> with <strong>self-reported mental well-being</strong>.<br>
+<p>Mental health has become one of the most pressing public health challenges of our time. In this brief data and coding tutorial, we will walk through a simple data analysis project that explores the relationship between <strong>social media use</strong> and <strong>self-reported mental well-being</strong>.<br>
 </p>
-<p>I will demonstrate how simple survey data analysis can reveal correlations between screen use and depression.<br>
-Disclaimer: This project will show correlation, <strong>not causation</strong>.</p>
+<p>Using data and Pandas functions found in Python packages, we will demonstrate how to clean, categorize, and visualize survey responses to see potential correlations between screen time and depression.<br>
+Disclaimer: This analysis will only show correlation, <strong>not causation</strong>.</p>
 </section>
 <section id="data-methods" class="level2">
 <h2 class="anchored" data-anchor-id="data-methods">Data &amp; Methods</h2>
 <section id="data-import" class="level3">
 <h3 class="anchored" data-anchor-id="data-import">Data Import</h3>
-<ul>
-<li>Source: Kaggle Public Health Domain Dataset.<br>
-</li>
-<li>Variables of interest:
-<ul>
-<li><code>Social Media Use</code> (hours per day)<br>
-</li>
-<li><code>Depression</code> (increased feelings of depression)</li>
-</ul></li>
-</ul>
-</section>
-<section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">Steps</h3>
-<ol type="1">
-<li><strong>Upload and format data</strong></li>
-</ol>
-<p>I will use a code block, as seen here, to load and format my data correctly.</p>
-<p>I will then use the function df.head() to visualize the first rows of data.</p>
+<p>For this project, we will use a publicly available dataset from Kaggle’s Public Health domain. The two key variables we’ll focus on within our dataset are:<br>
+- <code>Social Media Use</code> (hours per day)<br>
+- <code>Depression</code> (self-reported increase in depressive feelings)</p>
+<p>We’ll start by importing the dataset into a Pandas DataFrame so we can begin cleaning and analyzing it.</p>
 <pre><code>``` python</code></pre>
 <p>import pandas as pd</p>
 <pre><code>df = pd.read_csv('smmh.csv')
 
-df.head()
-
 ```</code></pre>
-<ol start="2" type="1">
-<li><strong>Categorize social media use</strong></li>
-</ol>
-<p>I will take responses from “AvgTime” (average time spent on social media daily) to organize my survey response data.</p>
-<pre><code>-   0 (Less than an hour)\
--   1 (1-2 hrs/day)\
--   2 (2-3 hrs/day)\
--   3 (3-4 hrs/day)\
--   4 (4-5 hrs/day)\
--   5 (5+ hrs/day)\</code></pre>
-<ol start="3" type="1">
-<li><strong>Compute average depression score</strong> by group.<br>
-</li>
-</ol>
-<p>I will then utilize a heat density plot to display the number of respondents in each category, showing the average time spent on social media cross-tabulated with the self-reported levels of depression.</p>
+</section>
+<section id="step-1-categorize-social-media-use" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-categorize-social-media-use">Step 1: Categorize Social Media Use</h3>
+<p>To make comparisons clearer, we’ll categorize respondents into time-use categories based on their daily social media usage.</p>
+<pre><code>-   0 -&gt; Less than an hour\
+-   1 -&gt; 1-2 hrs/day\
+-   2 -&gt; 2-3 hrs/day\
+-   3 -&gt; 3-4 hrs/day\
+-   4 -&gt; 4-5 hrs/day\
+-   5 -&gt; 5+ hrs/day\</code></pre>
+</section>
+<section id="step-2-compute-average-depression-by-group." class="level3">
+<h3 class="anchored" data-anchor-id="step-2-compute-average-depression-by-group.">Step 2: Compute Average Depression by Group.<br>
+</h3>
+<p>Next, we’ll calculate how depression scores differ across these categories. A heatmap provides a quick way to visualize the relationship between <strong>time spent on social media</strong> and <strong>self-reported depression</strong>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2_contingency</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2</span>
@@ -305,16 +285,20 @@ df.head()
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>crosstabDT <span class="op">=</span> pd.crosstab(index <span class="op">=</span> df.AvgTime , columns <span class="op">=</span> df.Depressed)</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>sns.heatmap(crosstabDT, annot <span class="op">=</span> <span class="va">True</span>, fmt<span class="op">=</span><span class="st">'d'</span>)</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mental hlth lol'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mental Health and Media Use'</span>)</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plot.png" class="img-fluid figure-img"></p>
+<figcaption>Plot</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>Notice how the highest rates of depression were also reported by the group that spent the most time on social media daily? Let’s take a look at average depression scores by using python to do some math.</p>
-<section id="average-depression-scores-by-social-media-use" class="level3">
-<h3 class="anchored" data-anchor-id="average-depression-scores-by-social-media-use">Average Depression Scores by Social Media Use</h3>
+<p>Looking at the heatmap, you may notice a trend: the groups reporting the most daily social media use also tend to show higher depression scores. To better quantify this relationship, let’s calculate the <strong>average depression score</strong> for each category using python’s averages functions.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Depressed"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>],</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Less than an Hour"</span>: [<span class="dv">14</span>, <span class="dv">12</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">2</span>],</span>
@@ -335,9 +319,8 @@ df.head()
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    averages[col] <span class="op">=</span> weighted_sum <span class="op">/</span> total_counts</span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>avg_scores <span class="op">=</span> pd.DataFrame.from_dict(averages, orient<span class="op">=</span><span class="st">"index"</span>, columns<span class="op">=</span>[<span class="st">"Average Depression Score"</span>])</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg_scores)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>After finding the results, let’s plug them into a table using Markdown table techniques to show the numbers side by side!</p>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>avg_scores <span class="op">=</span> pd.DataFrame.from_dict(averages, orient<span class="op">=</span><span class="st">"index"</span>, columns<span class="op">=</span>[<span class="st">"Average Depression Score"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Here’s a summary table of the results:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -372,10 +355,9 @@ df.head()
 </tr>
 </tbody>
 </table>
-</section>
 <section id="visualization" class="level3">
 <h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
-<p>Now, we will take the numbers found in our table and plug them in to a bar chart created with matplotlib.pyplot and pandas packages!</p>
+<p>To make this trend easy to see, let’s plot these averages as a bar chart with matplotlib.pyplot and pandas packages!</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -404,36 +386,41 @@ df.head()
 <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Show chart</span></span>
 <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="barchart.png" class="img-fluid figure-img"></p>
+<figcaption>Bar chart</figcaption>
+</figure>
+</div>
 </section>
-</section>
-<section id="discussion" class="level2">
-<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-<p>We will now take a look at the patterns and record our observations about the data.</p>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>From this simple analysis, a clear pattern emerges: <strong>higher reported depression is associated with heavier social media use.</strong><br>
+</p>
 <ul>
-<li><strong>Pattern observed:</strong> Higher reported depression is associated with heavier social media use.<br>
-</li>
-<li><strong>Strengths:</strong> Large dataset.<br>
-</li>
-<li><strong>Limitations:</strong>
+<li><p><strong>Strengths:</strong> The dataset is relatively large, making trends easier to detect.<br>
+</p></li>
+<li><p><strong>Limitations:</strong><br>
+</p>
 <ul>
-<li>Correlation ≠ causation.<br>
-</li>
-<li>Self-reported data may introduce bias.<br>
-</li>
-<li>Potential confounders (family, academics, socioeconomic status) not modeled here.</li>
+<li><p>Correlation ≠ causation.<br>
+</p></li>
+<li><p>Self-reported data introduces bias.<br>
+</p></li>
+<li><p>Important confounders (family, academics, socioeconomic status, etc.) are not included here.&nbsp;</p></li>
 </ul></li>
 </ul>
 </section>
-<section id="call-to-action" class="level2">
-<h2 class="anchored" data-anchor-id="call-to-action">Call to Action</h2>
+<section id="call-to-action" class="level3">
+<h3 class="anchored" data-anchor-id="call-to-action">Call to Action</h3>
+<p>This tutorial demonstrates how a few lines of code can uncover meaningful patterns in public health data.</p>
 <ul>
-<li><strong>For peers:</strong> Apply these steps to other <strong>health-related datasets</strong> and share reproducible analyses on GitHub Pages.<br>
-</li>
-<li><strong>Practical skill:</strong> Data wrangling + Markdown summaries make public health data <strong>accessible</strong> and <strong>persuasive</strong>.</li>
+<li><p><strong>For students and peers:</strong> Try applying these steps to other health-related datasets and share your findings. You never know what you might discover!</p></li>
+<li><p><strong>Practical takeaway:</strong> Combining Python, Markdown, and visualization tools helps make data analysis <strong>clear, reproducible, and persuasive.</strong></p></li>
 </ul>
 </section>
-<section id="references-links" class="level2">
-<h2 class="anchored" data-anchor-id="references-links">References &amp; Links</h2>
+<section id="references-links" class="level3">
+<h3 class="anchored" data-anchor-id="references-links">References &amp; Links</h3>
 <ul>
 <li>Kaggle: <a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health/data">Dataset reference</a><br>
 </li>
