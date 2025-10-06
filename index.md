@@ -2,6 +2,8 @@
 title: "Welcome to My Data Science Portfolio"
 ---
 
+![Katie Giauque][katie.png]
+
 # Hello! I'm Katie 👋
 
 Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered.
@@ -52,3 +54,5 @@ See how I upload data from different file types to create meaningful visual resu
 ---
 
 *Thanks for visiting! Feel free to explore my projects and see what I'm learning.*
+
+[def]: katie.png
