@@ -1,20 +1,15 @@
 ---
 title: "About Me"
 ---
+![Katie Giauque](katie.JPEG)
 
 ## Background
 
-I’m a senior at Brigham Young University studying Statistics, with a focus on biostatistics and applications of data in real-world problem solving. As the student representative for BYU Biostatistics, I enjoy connecting peers with opportunities to grow in this field and exploring how statistical methods can drive meaningful insights.
-
-I’m especially excited about the intersection of statistics and artificial intelligence. Through my work with Pixydocs, a machine learning company, I’m gaining hands-on experience with the implementation of automation in the workplace. My current projects center on finding efficient, practical solutions to tedious tasks—like streamlining bookkeeping—so people can focus more on what matters most in their work.
-
-Beyond academics and work, I’m passionate about living life with curiosity and adventure. You’ll often find me rock climbing, running, zip-lining, or hiking with my husband, Zach.
-
-I’m always eager to learn, collaborate, and help build data-driven solutions that make life easier and better.
+I am a data analyst at ERA Group and a statistics senior at Brigham Young University. When I am not studying or working, I love to spend time with my husband Zach exploring the world around us. I grew up in rural Idaho raising cows, chickens, and goats, and still love to be outside whenever I get the chance. 
 
 ## Education
 
-- **[Statistics]** - [Brigham Young University], [2026]
+- **Statistics** - Brigham Young University, April 2026
 - **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
 
 ## Skills & Interests 
@@ -27,16 +22,17 @@ I’m always eager to learn, collaborate, and help build data-driven solutions t
 - **Tools**: Jupyter Notebooks, Git/GitHub
 
 ### Areas of Interest
-- Healthcare Analytics 
+- Corporate Data Analytics 
 - Machine Learning and Data Collection 
 
 ## Goals
 
-Describe what you hope to achieve through your data science journey:
+What I hope to achieve through my data science journey:
 
-- Short-term learning objectives
-- Long-term career aspirations
-- Types of problems you want to solve
+- Continue to develop skills that will boost my career
+- Find a fulfilling balance between my family and my career
+- Tell meaningful stories using real data to solve real problems
+- Earn an MBA to continue to grow academically and professionally
 
 ## Contact
 

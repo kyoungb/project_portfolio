@@ -2,19 +2,17 @@
 title: "Welcome to My Data Science Portfolio"
 ---
 
-![Katie Giauque][katie.png]
-
 # Hello! I'm Katie 👋
 
-Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered.
+Welcome to my data science portfolio! This site shows my journey as I learn data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered as I've practiced and developed valuable technical skills.
 
 ## 🎓 About This Portfolio
 
-This portfolio shows my work learning data science. Each project includes:
+This portfolio shows my journey as I work to learn to apply data science principals. Each project includes:
 
 - My code with documentation
 - Visualizations I created
-- What I learned and discovered
+- What I discovered
 
 I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pages](https://pages.github.com/).
 
