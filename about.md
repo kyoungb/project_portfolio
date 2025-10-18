@@ -12,6 +12,12 @@ I am a data analyst at ERA Group and a statistics senior at Brigham Young Univer
 - **Statistics** - Brigham Young University, April 2026
 - **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
 
+## Experience
+
+- 3 years as Data Specialist with Pixydocs
+- Data Analyst at Era Group 
+- TA for Tableau and SAS code
+
 ## Skills & Interests 
 
 ### Technical Skills
