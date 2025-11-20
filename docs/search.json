@@ -102,9 +102,9 @@
   {
     "objectID": "projects/data-acquisition.html",
     "href": "projects/data-acquisition.html",
-    "title": "",
+    "title": "Data Acquisition Project",
     "section": "",
-    "text": "Code",
+    "text": "Across the world, pregnancy is still a risky event for many women: hundreds of women die every day from largely preventable complications of pregnancy and childbirth.\nAt the same time, countries differ dramatically in both economic resources (GDP per capita) and access to family-planning services (contraceptive prevalence). International agencies like WHO, UNICEF, the UN, and the World Bank routinely publish indicators on these topics.\nThis project is interesting because it puts those pieces together in one place. By combining:\n\nGDP per capita by country\nMaternal mortality ratios (MMR) for multiple years\nContraceptive prevalence (% of women using any method)\n\nwe can visually explore how economic development and access to contraception line up with maternal health outcomes around the world.\nThe dashboard you built (global GDP choropleth, small multiples of maternal mortality over time, first-world mortality map, and contraceptive prevalence table) turns these abstract numbers into something you can immediately see and compare.",
     "crumbs": [
       "Data Acquisition Project"
     ]
@@ -243,7 +243,7 @@
     "href": "projects/data-acquisition.html#a-link-to-your-code-in-a-separate-github-repo",
     "title": "Data Acquisition Project",
     "section": "A link to your code in a separate GitHub repo",
-    "text": "A link to your code in a separate GitHub repo",
+    "text": "A link to your code in a separate GitHub repo\nhttps://github.com/kyoungb/DataAcquisitionBuild",
     "crumbs": [
       "Data Acquisition Project"
     ]
