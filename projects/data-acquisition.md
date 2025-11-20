@@ -1,7 +1,7 @@
 ---
 title: "Data Acquisition Project"
 author: "Katie Youngberg"
-date: "2025-01-01"
+date: "2025-11-19"
 format:
   html:
     code-fold: true
@@ -60,6 +60,7 @@ High-level steps (leaving out code details):
 
   - Save each dataset as a separate CSV (for example: maternal_mortality.csv, gdp_per_capita.csv, contraceptive_prevalence.csv).
 
+
 - Clean and standardize country names
 
   - In Python, load each CSV with pandas.read_csv.
@@ -69,6 +70,7 @@ High-level steps (leaving out code details):
   - Pivot the maternal mortality data so that years become columns (1985, 2000, 2010, 2020).
 
   - Standardize country names (fix spelling differences like “United States” vs “United States of America”, “Côte d'Ivoire” vs “Cote dIvoire”) so joins work cleanly.
+
 
 - Merge datasets
 
@@ -80,44 +82,14 @@ High-level steps (leaving out code details):
 
     - GDP per capita (latest or 2020)
 
-  - Optionally add a region column (e.g., manually or from another reference table) to help with grouping and filtering.
 
-- Export for visualization
+- Export for statistical summary and visualization
 
   - Save the merged dataframe as womens_health_econ.csv (143 rows × 8 columns).
 
-  - Connect this CSV into Tableau (or another visualization tool) and build:
-
-    - A world map of GDP per capita.
-
-    - Small multiples of maternal mortality by country and year.
-
-    - A bubble map focusing on “first-world” / high-income countries.
-
-    - A table for contraceptive prevalence.
-
+  - Perform effective analysis
 
 ## EDA highlights
-
-Working from the final dataset (womens_health_econ.csv):
-
-- Sample size: 143 countries.
-
-Variables:
-
-- country
-
-- Maternal mortality ratios (1985, 2000, 2010, 2020)
-
-- contraceptive_prevalence_pct (0–100)
-
-- gdp_per_capita_usd
-
-- region (some values present, some missing)
-
-- Maternal mortality over time
-
-From summary statistics:
 
 - Mean MMR in 1985: ~450 deaths per 100,000 live births
 
@@ -137,12 +109,10 @@ Range in 2020:
 
 - Max: 1222.5 (South Sudan) deaths per 100,000
 
-You can see this decline clearly in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.
+You can see this decline in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.
 
 
 Contraceptive prevalence
-
-Across countries:
 
 Mean contraceptive prevalence: ~48%
 
@@ -154,6 +124,7 @@ Low usage: South Sudan (4%), Chad (5%), Angola (6%)
 
 High usage: Norway (88%), Belgium/other European countries in the 70–80% range.
 
+
 GDP per capita
 
 Mean GDP per capita: about $11,100
@@ -163,8 +134,6 @@ Range: ~$154 to ~$107,000
 The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.
 
 Associations
-
-(Computed from the dataset.)
 
 Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36
 
@@ -184,55 +153,34 @@ The “Mortality Rates Among First World Countries” bubble map emphasizes that
 
 ## Most Interesting Findings
 
-Most interesting findings from the EDA
+# Global progress but persistent inequity
 
-A concise list you can expand on in your report:
+Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k, mirroring global estimates showing a ~40–50% decline but large gaps between low- and high-income regions.
 
-Global progress but persistent inequity
+# Contraceptive prevalence is strongly linked to better outcomes.
 
-Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k.
+The strongest statistical relationship in my dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67), fitting with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.
 
-This mirrors global estimates showing a ~40–50% decline but large gaps between low- and high-income regions.
-datadot
-+2
-UNICEF Data
-+2
 
-Contraceptive prevalence is strongly linked to better outcomes
-
-The strongest statistical relationship in your dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67).
-
-This fits with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.
-Our World in Data
-+2
-United Nations
-+2
-
-Economic development helps, but isn’t everything
+# Economic development helps, but isn’t everything
 
 GDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).
 
 Some countries with moderate GDP do very well (low mortality) and others with relatively high GDP still underperform, suggesting that how health resources are organized and who they reach matters as much as overall wealth.
 
-First-world variation is real
+# First-world variation is real
 
 Among high-income countries on your “first-world” map, some have maternal mortality ~1–3 deaths per 100k, while others are higher.
 
-External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending.
-Live Science
-+1
+External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending, opening the door to questions about health-care access, racial inequities, and policy differences even among rich nations.
 
-This opens the door to questions about health-care access, racial inequities, and policy differences even among rich nations.
-
-Long-term improvement is not guaranteed
+# Long-term improvement is not guaranteed
 
 The time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.
 
 ## Further Information
 
-You can list these at the end of your blog:
-
-World Bank – GDP per capita (current US$) – download GDP data and documentation.
+World Bank – GDP per capita (current US$)
 
 World Bank – Maternal mortality ratio – modeled estimates per 100,000 live births.
 
