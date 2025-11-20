@@ -7,13 +7,13 @@ format:
     code-fold: true
     toc: true
 ---
-## Introduction / motivation of why this project is relevant and interesting
+## Introduction
 
 Pregnancy is still a risk for women around the world: hundreds of women die every day from largely preventable complications of pregnancy and childbirth.
 
 At the same time, countries differ dramatically in both economic resources (GDP per capita) and access to family-planning services (contraceptive prevalence). International agencies like WHO, UNICEF, the UN, and the World Bank routinely publish indicators on these topics.
 
-## Motivating question (what are you hoping to learn from this data?)
+## Motivating question 
 
 How are maternal mortality rates across countries related to both economic development (GDP per capita) and access to contraception, and how have these patterns changed over time?
 
@@ -27,7 +27,7 @@ More specific questions:
 
 - Among “first-world” (high-income) countries, who is doing especially well or surprisingly poorly?
 
-## Information about how you determined that it was ethical / allowable to get the data that you gathered and/or how you implemented good scraping practice
+## Ethics
 
 All of the information used here is country-level, aggregate data with no individual-level or personally identifiable information. The sources themselves are major international organizations that publish data explicitly for public use in research and education, including:
 
@@ -39,7 +39,7 @@ All of the information used here is country-level, aggregate data with no indivi
 
 Because the data is already public and intended for reuse, there are no additional human-subjects or privacy concerns beyond properly citing the source and respecting any stated terms of use.
 
-## Summary of the steps needed to get your data with an emphasis on teaching other how they could get started with a similar project
+## Steps Summary 
 
 High-level steps (leaving out code details):
 
@@ -96,9 +96,8 @@ High-level steps (leaving out code details):
 
     - A table for contraceptive prevalence.
 
-That’s enough detail for someone else with basic Python + Tableau skills to reproduce a similar project.
 
-## EDA highlights: summary statistics, summary graphics, and/or information about final dataset (e.g., total sample size, counts of categorical variables, numerical summaries of numeric variables)
+## EDA highlights
 
 Working from the final dataset (womens_health_econ.csv):
 
@@ -183,7 +182,7 @@ Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 
 
 The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.
 
-## What are the most interesting findings of your EDA?
+## Most Interesting Findings
 
 Most interesting findings from the EDA
 
@@ -229,7 +228,7 @@ Long-term improvement is not guaranteed
 
 The time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.
 
-## Links to find further information and /or resources
+## Further Information
 
 You can list these at the end of your blog:
 
@@ -243,6 +242,6 @@ UN Population Division – World Contraceptive Use – contraceptive prevalence 
 
 World Bank – Contraceptive prevalence, any method (% of married women 15–49) – alternative source for contraception indicators.
 
-## A link to your code in a separate GitHub repo
+## Link to the code
 
 https://github.com/kyoungb/DataAcquisitionBuild 
