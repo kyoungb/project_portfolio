@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "![Katie Giauque][katie.png]"
+    "text": "Welcome to my data science portfolio! This site shows my journey as I learn data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered as I’ve practiced and developed valuable technical skills.\n\n\nThis portfolio shows my journey as I work to learn to apply data science principals. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nSee how I upload data from different file types to create meaningful visual results.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
     "objectID": "index.html#about-this-portfolio",
     "href": "index.html#about-this-portfolio",
     "title": "Welcome to My Data Science Portfolio",
-    "section": "🎓 About This Portfolio",
-    "text": "🎓 About This Portfolio\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+    "section": "",
+    "text": "This portfolio shows my journey as I work to learn to apply data science principals. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I discovered\n\nI built this site using Quarto and host it on GitHub Pages."
   },
   {
     "objectID": "index.html#skills-im-learning",
     "href": "index.html#skills-im-learning",
     "title": "Welcome to My Data Science Portfolio",
-    "section": "🛠️ Skills I’m Learning",
-    "text": "🛠️ Skills I’m Learning\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
   },
   {
     "objectID": "index.html#my-projects",
     "href": "index.html#my-projects",
     "title": "Welcome to My Data Science Portfolio",
-    "section": "📈 My Projects",
-    "text": "📈 My Projects\n\n\nData Exploration Project\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\nData Collection Project\nSee how I gather data from different sources and prepare it for analysis.\n\n\nFinal Project\nSee how I tackle a data science project beginning to end.\n\n\nBlog Post\nSee how I upload data from different file types to create meaningful visual results.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "section": "",
+    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nSee how I upload data from different file types to create meaningful visual results.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
     "objectID": "projects/index.html",
@@ -102,9 +102,9 @@
   {
     "objectID": "projects/data-acquisition.html",
     "href": "projects/data-acquisition.html",
-    "title": "Data Acquisition Project",
+    "title": "",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
+    "text": "Code",
     "crumbs": [
       "Data Acquisition Project"
     ]
@@ -167,5 +167,92 @@
     "title": "Measuring the Mental Cost of Social Media",
     "section": "",
     "text": "Kaggle: Dataset reference\n\nNIH Research Summary: Social media use linked to brain changes in teens"
+  },
+  {
+    "objectID": "projects/data-acquisition.html#introduction-motivation-of-why-this-project-is-relevant-and-interesting",
+    "href": "projects/data-acquisition.html#introduction-motivation-of-why-this-project-is-relevant-and-interesting",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "Across the world, pregnancy is still a risky event for many women: hundreds of women die every day from largely preventable complications of pregnancy and childbirth.\nAt the same time, countries differ dramatically in both economic resources (GDP per capita) and access to family-planning services (contraceptive prevalence). International agencies like WHO, UNICEF, the UN, and the World Bank routinely publish indicators on these topics.\nThis project is interesting because it puts those pieces together in one place. By combining:\n\nGDP per capita by country\nMaternal mortality ratios (MMR) for multiple years\nContraceptive prevalence (% of women using any method)\n\nwe can visually explore how economic development and access to contraception line up with maternal health outcomes around the world.\nThe dashboard you built (global GDP choropleth, small multiples of maternal mortality over time, first-world mortality map, and contraceptive prevalence table) turns these abstract numbers into something you can immediately see and compare.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#motivating-question-what-are-you-hoping-to-learn-from-this-data",
+    "href": "projects/data-acquisition.html#motivating-question-what-are-you-hoping-to-learn-from-this-data",
+    "title": "Data Acquisition Project",
+    "section": "Motivating question (what are you hoping to learn from this data?)",
+    "text": "Motivating question (what are you hoping to learn from this data?)\nHow are maternal mortality rates across countries related to both economic development (GDP per capita) and access to contraception, and how have these patterns changed over time?\nMore specific things you’re hoping to learn:\n\nDo richer countries consistently have lower maternal mortality?\nIs contraceptive prevalence more strongly associated with maternal mortality than GDP alone?\nHave high-mortality countries improved since 1985, or are there places where progress has stalled?\nAmong “first-world” (high-income) countries, who is doing especially well or surprisingly poorly?",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#information-about-how-you-determined-that-it-was-ethical-allowable-to-get-the-data-that-you-gathered-andor-how-you-implemented-good-scraping-practice",
+    "href": "projects/data-acquisition.html#information-about-how-you-determined-that-it-was-ethical-allowable-to-get-the-data-that-you-gathered-andor-how-you-implemented-good-scraping-practice",
+    "title": "Data Acquisition Project",
+    "section": "Information about how you determined that it was ethical / allowable to get the data that you gathered and/or how you implemented good scraping practice",
+    "text": "Information about how you determined that it was ethical / allowable to get the data that you gathered and/or how you implemented good scraping practice\nAll of the information used here is country-level, aggregate data with no individual-level or personally identifiable information.\nThe sources are major international organizations that publish data explicitly for public use in research and education, including:\n\nWorld Bank GDP per capita indicators\nUNICEF / WHO / World Bank / UNFPA maternal mortality indicators (MMR, SDG 3.1.1)\nUN Population Division & World Bank / UN contraceptive prevalence datasets\n\nThese portals either provide:\nDirect CSV/API downloads, or\nStatic HTML tables that can be scraped at a very low request rate.\nBecause the data are already public, aggregated, and intended for reuse, there are no additional human-subjects or privacy concerns beyond properly citing the source and respecting any stated terms of use.\nFor scraping / access, you followed “good citizen” practices:\n\nPrefer official CSV/API endpoints when available instead of scraping multiple pages.\nOnly send a small number of requests (one per dataset).\nAvoid logging in, bypassing paywalls, or scraping anything behind authentication.\nCache the downloaded files locally instead of re-hitting the server repeatedly.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#summary-of-the-steps-needed-to-get-your-data-with-an-emphasis-on-teaching-other-how-they-could-get-started-with-a-similar-project",
+    "href": "projects/data-acquisition.html#summary-of-the-steps-needed-to-get-your-data-with-an-emphasis-on-teaching-other-how-they-could-get-started-with-a-similar-project",
+    "title": "Data Acquisition Project",
+    "section": "Summary of the steps needed to get your data with an emphasis on teaching other how they could get started with a similar project",
+    "text": "Summary of the steps needed to get your data with an emphasis on teaching other how they could get started with a similar project\nHigh-level steps (leaving out code details):\n\nPick indicators & sources\n\nGDP per capita (current US$) → World Bank indicator NY.GDP.PCAP.CD.\nMaternal mortality ratio (deaths per 100,000 live births) at multiple years (1985, 2000, 2010, 2020) → UN/WHO/World Bank joint estimates.\nContraceptive prevalence (% of women 15-49 using any method) → UN “World Contraceptive Use” / World Bank fertility indicators.\n\nDownload raw data\n\nFor World Bank indicators, use the “Download CSV” button or API link on the indicator page.\nFor UN Data tables, use read_html or manually download the CSV from the “Download” link.\nSave each dataset as a separate CSV (for example: maternal_mortality.csv, gdp_per_capita.csv, contraceptive_prevalence.csv).\n\nClean and standardize country names\n\nIn Python, load each CSV with pandas.read_csv.\nKeep only the columns you need: country name, year, and value.\nPivot the maternal mortality data so that years become columns (1985, 2000, 2010, 2020).\nStandardize country names (fix spelling differences like “United States” vs “United States of America”, “Côte d’Ivoire” vs “Cote dIvoire”) so joins work cleanly.\n\nMerge datasets\n\nUse pd.merge on the country column to create a combined dataframe with:\n\nmaternal mortality for several years\n2020 contraceptive prevalence\nGDP per capita (latest or 2020)\n\nOptionally add a region column (e.g., manually or from another reference table) to help with grouping and filtering.\n\nExport for visualization\n\nSave the merged dataframe as womens_health_econ.csv (143 rows × 8 columns).\nConnect this CSV into Tableau (or another visualization tool) and build:\n\nA world map of GDP per capita.\nSmall multiples of maternal mortality by country and year.\nA bubble map focusing on “first-world” / high-income countries.\nA table for contraceptive prevalence.\n\n\n\nThat’s enough detail for someone else with basic Python + Tableau skills to reproduce a similar project.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#eda-highlights-summary-statistics-summary-graphics-andor-information-about-final-dataset-e.g.-total-sample-size-counts-of-categorical-variables-numerical-summaries-of-numeric-variables",
+    "href": "projects/data-acquisition.html#eda-highlights-summary-statistics-summary-graphics-andor-information-about-final-dataset-e.g.-total-sample-size-counts-of-categorical-variables-numerical-summaries-of-numeric-variables",
+    "title": "Data Acquisition Project",
+    "section": "EDA highlights: summary statistics, summary graphics, and/or information about final dataset (e.g., total sample size, counts of categorical variables, numerical summaries of numeric variables)",
+    "text": "EDA highlights: summary statistics, summary graphics, and/or information about final dataset (e.g., total sample size, counts of categorical variables, numerical summaries of numeric variables)\nWorking from the final dataset (womens_health_econ.csv):\n\nSample size: 143 countries.\n\nVariables:\n\ncountry\nMaternal mortality ratios (1985, 2000, 2010, 2020)\ncontraceptive_prevalence_pct (0–100)\ngdp_per_capita_usd\nregion (some values present, some missing)\nMaternal mortality over time\n\nFrom summary statistics:\n\nMean MMR in 1985: ~450 deaths per 100,000 live births\nMean MMR in 2020: ~172 deaths per 100,000\n\nOn average, maternal mortality has dropped by about 60% over 35 years in this set (450 → 172).\nRange in 2020:\n\nMin: 1.1 deaths per 100k (Belarus)\n25th percentile: ~22.5 deaths per 100,000\nMedian: ~77.1 deaths per 100,000\n75th percentile: ~225.1 deaths per 100,000\nMax: 1222.5 (South Sudan) deaths per 100,000\n\nYou can see this decline clearly in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.\nContraceptive prevalence\nAcross countries:\nMean contraceptive prevalence: ~48%\nRange: 4–88% of women using some form of contraception.\nThe “Contraceptive Prevalence” table in the dashboard shows this as a sortable list; e.g.:\nLow usage: South Sudan (4%), Chad (5%), Angola (6%)\nHigh usage: Norway (88%), Belgium/other European countries in the 70–80% range.\nGDP per capita\nMean GDP per capita: about $11,100\nRange: ~$154 to ~$107,000\nThe Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.\nAssociations\n(Computed from the dataset.)\nCorrelation between 2020 maternal mortality and GDP per capita: r ≈ –0.36\nRough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.\nCorrelation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67\nStronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.\nExtremes:\nHighest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).\nLowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.\nThe “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#what-are-the-most-interesting-findings-of-your-eda",
+    "href": "projects/data-acquisition.html#what-are-the-most-interesting-findings-of-your-eda",
+    "title": "Data Acquisition Project",
+    "section": "What are the most interesting findings of your EDA?",
+    "text": "What are the most interesting findings of your EDA?\nMost interesting findings from the EDA\nA concise list you can expand on in your report:\nGlobal progress but persistent inequity\nAverage maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k.\nThis mirrors global estimates showing a ~40–50% decline but large gaps between low- and high-income regions. datadot +2 UNICEF Data +2\nContraceptive prevalence is strongly linked to better outcomes\nThe strongest statistical relationship in your dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67).\nThis fits with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births. Our World in Data +2 United Nations +2\nEconomic development helps, but isn’t everything\nGDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).\nSome countries with moderate GDP do very well (low mortality) and others with relatively high GDP still underperform, suggesting that how health resources are organized and who they reach matters as much as overall wealth.\nFirst-world variation is real\nAmong high-income countries on your “first-world” map, some have maternal mortality ~1–3 deaths per 100k, while others are higher.\nExternal data show the U.S., for example, has much higher maternal mortality than many peers despite high spending. Live Science +1\nThis opens the door to questions about health-care access, racial inequities, and policy differences even among rich nations.\nLong-term improvement is not guaranteed\nThe time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#links-to-find-further-information-and-or-resources",
+    "href": "projects/data-acquisition.html#links-to-find-further-information-and-or-resources",
+    "title": "Data Acquisition Project",
+    "section": "Links to find further information and /or resources",
+    "text": "Links to find further information and /or resources\nYou can list these at the end of your blog:\nWorld Bank – GDP per capita (current US$) – download GDP data and documentation.\nWorld Bank – Maternal mortality ratio – modeled estimates per 100,000 live births.\nWHO / UN Maternal mortality fact sheets & SDG 3.1 – background on definitions, trends, and targets.\nUN Population Division – World Contraceptive Use – contraceptive prevalence datasets and methodology.\nWorld Bank – Contraceptive prevalence, any method (% of married women 15–49) – alternative source for contraception indicators.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#a-link-to-your-code-in-a-separate-github-repo",
+    "href": "projects/data-acquisition.html#a-link-to-your-code-in-a-separate-github-repo",
+    "title": "Data Acquisition Project",
+    "section": "A link to your code in a separate GitHub repo",
+    "text": "A link to your code in a separate GitHub repo",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\n3 years as Data Specialist with Pixydocs\nData Analyst at Era Group\nTA for Tableau and SAS code"
   }
 ]
