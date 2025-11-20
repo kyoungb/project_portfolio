@@ -97,7 +97,7 @@ High-level steps (leaving out code details):
 
 On average, maternal mortality has dropped by about 60% over 35 years in this set (450 → 172).
 
-Range in 2020:
+# Range in 2020:
 
 - Min: 1.1 deaths per 100k (Belarus)
 
@@ -112,44 +112,49 @@ Range in 2020:
 You can see this decline in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.
 
 
-Contraceptive prevalence
+# Contraceptive prevalence
 
-Mean contraceptive prevalence: ~48%
+- Mean contraceptive prevalence: ~48%
 
-Range: 4–88% of women using some form of contraception.
+- Range: 4–88% of women using some form of contraception.
 
-The “Contraceptive Prevalence” table in the dashboard shows this as a sortable list; e.g.:
+- Low usage: South Sudan (4%), Chad (5%), Angola (6%)
 
-Low usage: South Sudan (4%), Chad (5%), Angola (6%)
-
-High usage: Norway (88%), Belgium/other European countries in the 70–80% range.
+- High usage: Norway (88%), Belgium/other European countries in the 70–80% range.
 
 
-GDP per capita
+# GDP per capita
 
-Mean GDP per capita: about $11,100
+- Mean GDP per capita: about $11,100
 
-Range: ~$154 to ~$107,000
+- Range: ~$154 to ~$107,000
 
-The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.
+- The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.
 
-Associations
+# Associations
 
-Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36
+- Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36
 
-Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.
+- Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.
 
-Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67
+- Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67
 
-Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.
+- Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.
 
-Extremes:
+# Extremes:
 
-Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).
+- Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).
 
-Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.
+- Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.
 
-The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.
+- The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.
+
+![avgMMR](AverageMMRyrs.png)
+![ContrMMR](ContrMMR.png)
+![distMMR](distMMR.png)
+![GDPmmr](GDPmmr.png)
+![MMRhigh5](MMRhigh5.png)
+![mmrlow5](mmrlow5.png)
 
 ## Most Interesting Findings
 
@@ -161,7 +166,6 @@ Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 a
 
 The strongest statistical relationship in my dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67), fitting with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.
 
-
 # Economic development helps, but isn’t everything
 
 GDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).
@@ -170,25 +174,21 @@ Some countries with moderate GDP do very well (low mortality) and others with re
 
 # First-world variation is real
 
-Among high-income countries on your “first-world” map, some have maternal mortality ~1–3 deaths per 100k, while others are higher.
-
 External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending, opening the door to questions about health-care access, racial inequities, and policy differences even among rich nations.
 
 # Long-term improvement is not guaranteed
 
-The time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.
+Although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.
 
 ## Further Information
 
-World Bank – GDP per capita (current US$)
+Maternal Mortality Ratio Book
 
-World Bank – Maternal mortality ratio – modeled estimates per 100,000 live births.
+https://www.cia.gov/the-world-factbook/field/maternal-mortality-ratio/country-comparison/
 
-WHO / UN Maternal mortality fact sheets & SDG 3.1 – background on definitions, trends, and targets.
+Maternal Mortality Information Site and Prevention Book
 
-UN Population Division – World Contraceptive Use – contraceptive prevalence datasets and methodology.
-
-World Bank – Contraceptive prevalence, any method (% of married women 15–49) – alternative source for contraception indicators.
+https://www.who.int/news-room/fact-sheets/detail/maternal-mortality
 
 ## Link to the code
 

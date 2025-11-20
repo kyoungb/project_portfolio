@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Katie Youngberg">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-11-19">
 
 <title>Data Acquisition Project – Katie Youngberg - Data Science Portfolio</title>
 <style>
@@ -239,9 +239,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ethics" id="toc-ethics" class="nav-link" data-scroll-target="#ethics">Ethics</a></li>
   <li><a href="#steps-summary" id="toc-steps-summary" class="nav-link" data-scroll-target="#steps-summary">Steps Summary</a></li>
   <li><a href="#eda-highlights" id="toc-eda-highlights" class="nav-link" data-scroll-target="#eda-highlights">EDA highlights</a></li>
+  <li><a href="#range-in-2020" id="toc-range-in-2020" class="nav-link" data-scroll-target="#range-in-2020">Range in 2020:</a></li>
+  <li><a href="#contraceptive-prevalence" id="toc-contraceptive-prevalence" class="nav-link" data-scroll-target="#contraceptive-prevalence">Contraceptive prevalence</a></li>
+  <li><a href="#gdp-per-capita" id="toc-gdp-per-capita" class="nav-link" data-scroll-target="#gdp-per-capita">GDP per capita</a></li>
+  <li><a href="#associations" id="toc-associations" class="nav-link" data-scroll-target="#associations">Associations</a></li>
+  <li><a href="#extremes" id="toc-extremes" class="nav-link" data-scroll-target="#extremes">Extremes:</a>
+  <ul class="collapse">
   <li><a href="#most-interesting-findings" id="toc-most-interesting-findings" class="nav-link" data-scroll-target="#most-interesting-findings">Most Interesting Findings</a></li>
+  </ul></li>
+  <li><a href="#global-progress-but-persistent-inequity" id="toc-global-progress-but-persistent-inequity" class="nav-link" data-scroll-target="#global-progress-but-persistent-inequity">Global progress but persistent inequity</a></li>
+  <li><a href="#contraceptive-prevalence-is-strongly-linked-to-better-outcomes." id="toc-contraceptive-prevalence-is-strongly-linked-to-better-outcomes." class="nav-link" data-scroll-target="#contraceptive-prevalence-is-strongly-linked-to-better-outcomes.">Contraceptive prevalence is strongly linked to better outcomes.</a></li>
+  <li><a href="#economic-development-helps-but-isnt-everything" id="toc-economic-development-helps-but-isnt-everything" class="nav-link" data-scroll-target="#economic-development-helps-but-isnt-everything">Economic development helps, but isn’t everything</a></li>
+  <li><a href="#first-world-variation-is-real" id="toc-first-world-variation-is-real" class="nav-link" data-scroll-target="#first-world-variation-is-real">First-world variation is real</a></li>
+  <li><a href="#long-term-improvement-is-not-guaranteed" id="toc-long-term-improvement-is-not-guaranteed" class="nav-link" data-scroll-target="#long-term-improvement-is-not-guaranteed">Long-term improvement is not guaranteed</a>
+  <ul class="collapse">
   <li><a href="#further-information" id="toc-further-information" class="nav-link" data-scroll-target="#further-information">Further Information</a></li>
   <li><a href="#link-to-the-code" id="toc-link-to-the-code" class="nav-link" data-scroll-target="#link-to-the-code">Link to the code</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -267,7 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">November 19, 2025</p>
     </div>
   </div>
   
@@ -351,7 +365,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Mean MMR in 2020: ~172 deaths per 100,000</p></li>
 </ul>
 <p>On average, maternal mortality has dropped by about 60% over 35 years in this set (450 → 172).</p>
-<p>Range in 2020:</p>
+</section>
+<section id="range-in-2020" class="level1">
+<h1>Range in 2020:</h1>
 <ul>
 <li><p>Min: 1.1 deaths per 100k (Belarus)</p></li>
 <li><p>25th percentile: ~22.5 deaths per 100,000</p></li>
@@ -360,49 +376,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Max: 1222.5 (South Sudan) deaths per 100,000</p></li>
 </ul>
 <p>You can see this decline in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.</p>
-<p>Contraceptive prevalence</p>
-<p>Mean contraceptive prevalence: ~48%</p>
-<p>Range: 4–88% of women using some form of contraception.</p>
-<p>The “Contraceptive Prevalence” table in the dashboard shows this as a sortable list; e.g.:</p>
-<p>Low usage: South Sudan (4%), Chad (5%), Angola (6%)</p>
-<p>High usage: Norway (88%), Belgium/other European countries in the 70–80% range.</p>
-<p>GDP per capita</p>
-<p>Mean GDP per capita: about $11,100</p>
-<p>Range: ~$154 to ~$107,000</p>
-<p>The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.</p>
-<p>Associations</p>
-<p>Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36</p>
-<p>Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.</p>
-<p>Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67</p>
-<p>Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.</p>
-<p>Extremes:</p>
-<p>Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).</p>
-<p>Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.</p>
-<p>The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.</p>
 </section>
+<section id="contraceptive-prevalence" class="level1">
+<h1>Contraceptive prevalence</h1>
+<ul>
+<li><p>Mean contraceptive prevalence: ~48%</p></li>
+<li><p>Range: 4–88% of women using some form of contraception.</p></li>
+<li><p>Low usage: South Sudan (4%), Chad (5%), Angola (6%)</p></li>
+<li><p>High usage: Norway (88%), Belgium/other European countries in the 70–80% range.</p></li>
+</ul>
+</section>
+<section id="gdp-per-capita" class="level1">
+<h1>GDP per capita</h1>
+<ul>
+<li><p>Mean GDP per capita: about $11,100</p></li>
+<li><p>Range: ~$154 to ~$107,000</p></li>
+<li><p>The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.</p></li>
+</ul>
+</section>
+<section id="associations" class="level1">
+<h1>Associations</h1>
+<ul>
+<li><p>Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36</p></li>
+<li><p>Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.</p></li>
+<li><p>Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67</p></li>
+<li><p>Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.</p></li>
+</ul>
+</section>
+<section id="extremes" class="level1">
+<h1>Extremes:</h1>
+<ul>
+<li><p>Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).</p></li>
+<li><p>Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.</p></li>
+<li><p>The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.</p></li>
+</ul>
+<p><img src="AverageMMRyrs.png" class="img-fluid" alt="avgMMR"> <img src="ContrMMR.png" class="img-fluid" alt="ContrMMR"> <img src="distMMR.png" class="img-fluid" alt="distMMR"> <img src="GDPmmr.png" class="img-fluid" alt="GDPmmr"> <img src="MMRhigh5.png" class="img-fluid" alt="MMRhigh5"> <img src="mmrlow5.png" class="img-fluid" alt="mmrlow5"></p>
 <section id="most-interesting-findings" class="level2">
 <h2 class="anchored" data-anchor-id="most-interesting-findings">Most Interesting Findings</h2>
-<p>Global progress but persistent inequity</p>
+</section>
+</section>
+<section id="global-progress-but-persistent-inequity" class="level1">
+<h1>Global progress but persistent inequity</h1>
 <p>Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k, mirroring global estimates showing a ~40–50% decline but large gaps between low- and high-income regions.</p>
-<p>Contraceptive prevalence is strongly linked to better outcomes.</p>
+</section>
+<section id="contraceptive-prevalence-is-strongly-linked-to-better-outcomes." class="level1">
+<h1>Contraceptive prevalence is strongly linked to better outcomes.</h1>
 <p>The strongest statistical relationship in my dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67), fitting with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.</p>
-<p>Economic development helps, but isn’t everything</p>
+</section>
+<section id="economic-development-helps-but-isnt-everything" class="level1">
+<h1>Economic development helps, but isn’t everything</h1>
 <p>GDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).</p>
 <p>Some countries with moderate GDP do very well (low mortality) and others with relatively high GDP still underperform, suggesting that how health resources are organized and who they reach matters as much as overall wealth.</p>
-<p>First-world variation is real</p>
-<p>Among high-income countries on your “first-world” map, some have maternal mortality ~1–3 deaths per 100k, while others are higher.</p>
-<p>External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending. Live Science +1</p>
-<p>This opens the door to questions about health-care access, racial inequities, and policy differences even among rich nations.</p>
-<p>Long-term improvement is not guaranteed</p>
-<p>The time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.</p>
 </section>
+<section id="first-world-variation-is-real" class="level1">
+<h1>First-world variation is real</h1>
+<p>External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending, opening the door to questions about health-care access, racial inequities, and policy differences even among rich nations.</p>
+</section>
+<section id="long-term-improvement-is-not-guaranteed" class="level1">
+<h1>Long-term improvement is not guaranteed</h1>
+<p>Although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.</p>
 <section id="further-information" class="level2">
 <h2 class="anchored" data-anchor-id="further-information">Further Information</h2>
-<p>World Bank – GDP per capita (current US$)</p>
-<p>World Bank – Maternal mortality ratio – modeled estimates per 100,000 live births.</p>
-<p>WHO / UN Maternal mortality fact sheets &amp; SDG 3.1 – background on definitions, trends, and targets.</p>
-<p>UN Population Division – World Contraceptive Use – contraceptive prevalence datasets and methodology.</p>
-<p>World Bank – Contraceptive prevalence, any method (% of married women 15–49) – alternative source for contraception indicators.</p>
+<p>Maternal Mortality Ratio Book</p>
+<p>https://www.cia.gov/the-world-factbook/field/maternal-mortality-ratio/country-comparison/</p>
+<p>Maternal Mortality Information Site and Prevention Book</p>
+<p>https://www.who.int/news-room/fact-sheets/detail/maternal-mortality</p>
 </section>
 <section id="link-to-the-code" class="level2">
 <h2 class="anchored" data-anchor-id="link-to-the-code">Link to the code</h2>
@@ -411,6 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -868,7 +907,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Katie Youngberg"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-01"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-11-19"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
@@ -964,7 +1003,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>On average, maternal mortality has dropped by about 60% over 35 years in this set (450 → 172).</span>
 <span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>Range in 2020:</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu"># Range in 2020:</span></span>
 <span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Min: 1.1 deaths per 100k (Belarus)</span>
 <span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
@@ -979,91 +1018,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>You can see this decline in the “Maternal Mortality Rates by Country” small-multiples panel: most bars shrink substantially from 1985 to 2020, but a handful of countries remain very high.</span>
 <span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>Contraceptive prevalence</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="fu"># Contraceptive prevalence</span></span>
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Mean contraceptive prevalence: ~48%</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mean contraceptive prevalence: ~48%</span>
 <span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>Range: 4–88% of women using some form of contraception.</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Range: 4–88% of women using some form of contraception.</span>
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>The “Contraceptive Prevalence” table in the dashboard shows this as a sortable list; e.g.:</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Low usage: South Sudan (4%), Chad (5%), Angola (6%)</span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>Low usage: South Sudan (4%), Chad (5%), Angola (6%)</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>High usage: Norway (88%), Belgium/other European countries in the 70–80% range.</span>
 <span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>High usage: Norway (88%), Belgium/other European countries in the 70–80% range.</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu"># GDP per capita</span></span>
 <span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>GDP per capita</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mean GDP per capita: about $11,100</span>
 <span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>Mean GDP per capita: about $11,100</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Range: ~$154 to ~$107,000</span>
 <span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>Range: ~$154 to ~$107,000</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.</span>
 <span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>The Overall GDP choropleth map shows clear regional patterns: North America, Western Europe, and a few high-income Asian/Oceanic countries are darkest, while much of Sub-Saharan Africa is lightest.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu"># Associations</span></span>
 <span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>Associations</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36</span>
 <span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>Correlation between 2020 maternal mortality and GDP per capita: r ≈ –0.36</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.</span>
 <span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Rough moderate negative relationship: richer countries tend to have lower maternal mortality, but there are exceptions.</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67</span>
 <span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>Correlation between 2020 maternal mortality and contraceptive prevalence: r ≈ –0.67</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.</span>
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>Stronger negative association: countries with higher contraceptive use tend to have much lower maternal mortality.</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu"># Extremes:</span></span>
 <span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>Extremes:</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).</span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>Highest 2020 MMR: South Sudan, Chad, Nigeria, Central African Republic, Guinea-Bissau (725–1222 deaths per 100k). These countries have low GDP and very low contraceptive prevalence (4–15%).</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.</span>
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>Lowest 2020 MMR: Belarus, Norway, Australia, Spain, Japan (1.1–4.3 deaths per 100k), all with relatively high GDP and moderate-to-high contraceptive prevalence.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.</span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>The “Mortality Rates Among First World Countries” bubble map emphasizes that even among high-income nations, there are differences: some have almost negligible maternal mortality, while others (like the US, if included) remain noticeably higher than peers, consistent with external statistics.</span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="fu">## Most Interesting Findings</span></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>Global progress but persistent inequity</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k, mirroring global estimates showing a ~40–50% decline but large gaps between low- and high-income regions.</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>Contraceptive prevalence is strongly linked to better outcomes.</span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>The strongest statistical relationship in my dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67), fitting with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="al">![avgMMR](AverageMMRyrs.png)</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="al">![ContrMMR](ContrMMR.png)</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="al">![distMMR](distMMR.png)</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="al">![GDPmmr](GDPmmr.png)</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="al">![MMRhigh5](MMRhigh5.png)</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="al">![mmrlow5](mmrlow5.png)</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="fu">## Most Interesting Findings</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu"># Global progress but persistent inequity</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>Average maternal mortality fell from ~450 to ~172 deaths per 100k between 1985 and 2020, but the worst-off countries are still above 700–1200 deaths per 100k, mirroring global estimates showing a ~40–50% decline but large gaps between low- and high-income regions.</span>
 <span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>Economic development helps, but isn’t everything</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu"># Contraceptive prevalence is strongly linked to better outcomes.</span></span>
 <span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>GDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>The strongest statistical relationship in my dataset is between higher contraceptive prevalence and lower maternal mortality (r ≈ –0.67), fitting with the idea that access to family planning helps prevent high-risk pregnancies and allows health systems to focus resources on fewer, safer births.</span>
 <span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>Some countries with moderate GDP do very well (low mortality) and others with relatively high GDP still underperform, suggesting that how health resources are organized and who they reach matters as much as overall wealth.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="fu"># Economic development helps, but isn’t everything</span></span>
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>First-world variation is real</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>GDP per capita is negatively correlated with maternal mortality, but less strongly (r ≈ –0.36).</span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>Among high-income countries on your “first-world” map, some have maternal mortality ~1–3 deaths per 100k, while others are higher.</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>Some countries with moderate GDP do very well (low mortality) and others with relatively high GDP still underperform, suggesting that how health resources are organized and who they reach matters as much as overall wealth.</span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending.</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>Live Science</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>+1</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu"># First-world variation is real</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>External data show the U.S., for example, has much higher maternal mortality than many peers despite high spending, opening the door to questions about health-care access, racial inequities, and policy differences even among rich nations.</span>
 <span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>This opens the door to questions about health-care access, racial inequities, and policy differences even among rich nations.</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="fu"># Long-term improvement is not guaranteed</span></span>
 <span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>Long-term improvement is not guaranteed</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>Although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.</span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>The time-series panel suggests that, although most countries improve over time, some show plateaus or even upticks in more recent years, reflecting concerns in recent reports that progress on maternal mortality has slowed or stalled.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further Information</span></span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further Information</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>Maternal Mortality Ratio Book</span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>World Bank – GDP per capita (current US$)</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>https://www.cia.gov/the-world-factbook/field/maternal-mortality-ratio/country-comparison/</span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>World Bank – Maternal mortality ratio – modeled estimates per 100,000 live births.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>Maternal Mortality Information Site and Prevention Book</span>
 <span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>WHO / UN Maternal mortality fact sheets &amp; SDG 3.1 – background on definitions, trends, and targets.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>https://www.who.int/news-room/fact-sheets/detail/maternal-mortality</span>
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>UN Population Division – World Contraceptive Use – contraceptive prevalence datasets and methodology.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## Link to the code</span></span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>World Bank – Contraceptive prevalence, any method (% of married women 15–49) – alternative source for contraception indicators.</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="fu">## Link to the code</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>https://github.com/kyoungb/DataAcquisitionBuild </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>https://github.com/kyoungb/DataAcquisitionBuild </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
