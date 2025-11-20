@@ -9,27 +9,15 @@ format:
 ---
 ## Introduction / motivation of why this project is relevant and interesting
 
-Across the world, pregnancy is still a risky event for many women: hundreds of women die every day from largely preventable complications of pregnancy and childbirth.
+Pregnancy is still a risk for women around the world: hundreds of women die every day from largely preventable complications of pregnancy and childbirth.
 
 At the same time, countries differ dramatically in both economic resources (GDP per capita) and access to family-planning services (contraceptive prevalence). International agencies like WHO, UNICEF, the UN, and the World Bank routinely publish indicators on these topics.
-
-This project is interesting because it puts those pieces together in one place. By combining:
-
-- GDP per capita by country
-
-- Maternal mortality ratios (MMR) for multiple years
-
-- Contraceptive prevalence (% of women using any method)
-
-we can visually explore how economic development and access to contraception line up with maternal health outcomes around the world.
-
-The dashboard you built (global GDP choropleth, small multiples of maternal mortality over time, first-world mortality map, and contraceptive prevalence table) turns these abstract numbers into something you can immediately see and compare.
 
 ## Motivating question (what are you hoping to learn from this data?)
 
 How are maternal mortality rates across countries related to both economic development (GDP per capita) and access to contraception, and how have these patterns changed over time?
 
-More specific things you’re hoping to learn:
+More specific questions:
 
 - Do richer countries consistently have lower maternal mortality?
 
@@ -41,9 +29,7 @@ More specific things you’re hoping to learn:
 
 ## Information about how you determined that it was ethical / allowable to get the data that you gathered and/or how you implemented good scraping practice
 
-All of the information used here is country-level, aggregate data with no individual-level or personally identifiable information.
-
-The sources are major international organizations that publish data explicitly for public use in research and education, including:
+All of the information used here is country-level, aggregate data with no individual-level or personally identifiable information. The sources themselves are major international organizations that publish data explicitly for public use in research and education, including:
 
 - World Bank GDP per capita indicators
 
@@ -51,23 +37,7 @@ The sources are major international organizations that publish data explicitly f
 
 - UN Population Division & World Bank / UN contraceptive prevalence datasets
 
-These portals either provide:
-
-Direct CSV/API downloads, or
-
-Static HTML tables that can be scraped at a very low request rate.
-
-Because the data are already public, aggregated, and intended for reuse, there are no additional human-subjects or privacy concerns beyond properly citing the source and respecting any stated terms of use.
-
-For scraping / access, you followed “good citizen” practices:
-
-- Prefer official CSV/API endpoints when available instead of scraping multiple pages.
-
-- Only send a small number of requests (one per dataset).
-
-- Avoid logging in, bypassing paywalls, or scraping anything behind authentication.
-
-- Cache the downloaded files locally instead of re-hitting the server repeatedly.
+Because the data is already public and intended for reuse, there are no additional human-subjects or privacy concerns beyond properly citing the source and respecting any stated terms of use.
 
 ## Summary of the steps needed to get your data with an emphasis on teaching other how they could get started with a similar project
 
